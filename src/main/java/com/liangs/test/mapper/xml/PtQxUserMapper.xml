@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liangs.test.mapper.PtQxUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.liangs.test.entity.PtQxUser">
+        <id column="USERID" property="userid" />
+        <result column="USERNAME" property="username" />
+        <result column="PASSWORD" property="password" />
+        <result column="MTYPE" property="mtype" />
+        <result column="SECLEVEL" property="seclevel" />
+        <result column="CREATENAME" property="createname" />
+        <result column="UPDATENAME" property="updatename" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="UPDATETIME" property="updatetime" />
+        <result column="SEX" property="sex" />
+        <result column="PHONE" property="phone" />
+        <result column="EMAIL" property="email" />
+        <result column="LOGINNAME" property="loginname" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        USERID AS userid, USERNAME AS username, PASSWORD AS password, MTYPE AS mtype, SECLEVEL AS seclevel, CREATENAME AS createname, UPDATENAME AS updatename, CREATETIME AS createtime, UPDATETIME AS updatetime, SEX AS sex, PHONE AS phone, EMAIL AS email, LOGINNAME AS loginname
+    </sql>
+
+</mapper>
