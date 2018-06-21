@@ -3,6 +3,7 @@ package com.liangs.test;
 import java.util.concurrent.*;
 
 public class SyncQueueTester {
+
     private static ExecutorService executor = new ThreadPoolExecutor(1, 1, 
             1000, TimeUnit.SECONDS, 
             new SynchronousQueue<Runnable>(),
