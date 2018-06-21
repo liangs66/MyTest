@@ -7,8 +7,6 @@ public class SyncQueueTester {
             1000, TimeUnit.SECONDS, 
             new SynchronousQueue<Runnable>(),
             new ThreadPoolExecutor.DiscardPolicy());
-//    private static ExecutorService executorService = Executors.newCachedThreadPool();
-
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 20; i++) {
